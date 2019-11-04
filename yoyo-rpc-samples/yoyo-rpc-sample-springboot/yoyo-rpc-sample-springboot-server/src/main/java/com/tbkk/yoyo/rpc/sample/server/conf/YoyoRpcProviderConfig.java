@@ -22,13 +22,11 @@ import java.util.HashMap;
 @Slf4j
 public class YoyoRpcProviderConfig {
 
-    @Value("${yoyo-rpc.remoting.port}")
-    private int port;
 
-    @Value("${yoyo-rpc.registry.yoyoregistry.address}")
+    @Value("${yoyo-rpc.registry.address}")
     private String address;
 
-    @Value("${yoyo-rpc.registry.yoyoregistry.env}")
+    @Value("${yoyo-rpc.registry.env}")
     private String env;
 
     @Bean
