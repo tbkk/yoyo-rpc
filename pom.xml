@@ -46,7 +46,7 @@
 		<protostuff.version>1.6.0</protostuff.version>
 		<objenesis.version>2.6</objenesis.version>
 		<kryo.version>4.0.2</kryo.version>
-		<jackson.version>2.9.9.1</jackson.version>
+		<jackson.version>2.9.10.1</jackson.version>
 
 
 		<yoyo-registry.version>1.0.2</yoyo-registry.version>
