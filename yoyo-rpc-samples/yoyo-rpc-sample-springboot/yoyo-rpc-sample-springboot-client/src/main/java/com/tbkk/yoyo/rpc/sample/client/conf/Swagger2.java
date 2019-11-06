@@ -35,8 +35,8 @@ public class Swagger2 {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("聚合服务离线计算系统平台")
-                .description("掌门1对1")
+                .title("xxxxxx")
+                .description("xxxxxxxx")
                 .version("2.0")
                 .build();
     }
