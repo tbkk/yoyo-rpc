@@ -222,10 +222,6 @@
 
 * tbkk([@tbkk](https://github.com/tbkk)) &nbsp;&nbsp;&nbsp; 极简.易用;
 
-* Supported Frameworks List **_
-
-* tbkk([@tbkk](https://github.com/tbkk))
-
 # License
 
 Motan is released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
