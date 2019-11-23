@@ -86,10 +86,10 @@ public class YoyoRpcSpringInvokerFactory extends InstantiationAwareBeanPostProce
             field.set(bean, serviceProxy);
 
             log.info("yoyo-rpc, invoker callback init reference bean success. serviceKey = {}, bean.field = {}.{}",
-                    YoyoServiceUtil.makeServiceKey(iface.getName(), rpcReference.version()), beanName, field.getName());
+                    YoyoServiceUtil.genServiceKey(iface.getName(), rpcReference.version()), beanName, field.getName());
 
             // collection
-            String serviceKey = YoyoServiceUtil.makeServiceKey(iface.getName(), rpcReference.version());
+            String serviceKey = YoyoServiceUtil.genServiceKey(iface.getName(), rpcReference.version());
             serviceKeyList.add(serviceKey);
         }, field -> {
             if (field.isAnnotationPresent(YoyoRpcReference.class)) {

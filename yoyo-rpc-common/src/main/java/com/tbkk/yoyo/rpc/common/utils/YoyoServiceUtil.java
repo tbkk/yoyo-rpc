@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class YoyoServiceUtil {
 
-    public static String makeServiceKey(String iface, String version){
+    public static String genServiceKey(String iface, String version){
         String serviceKey = iface;
         if (version!=null && version.trim().length()>0) {
             serviceKey += "#".concat(version);

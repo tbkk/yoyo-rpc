@@ -46,7 +46,7 @@ public class ProviderServicePool {
      * @param serviceBean
      */
     public void addService(String iface, String version, Object serviceBean){
-        String serviceKey = YoyoServiceUtil.makeServiceKey(iface, version);
+        String serviceKey = YoyoServiceUtil.genServiceKey(iface, version);
         serviceData.put(serviceKey, serviceBean);
 
         log.info(" yoyo-rpc, provider callback add service success. serviceKey = {}, serviceBean = {}", serviceKey, serviceBean.getClass());
@@ -65,7 +65,7 @@ public class ProviderServicePool {
         rpcResponse.setRequestId(rpcRequest.getRequestId());
 
         // match service bean
-        String serviceKey = YoyoServiceUtil.makeServiceKey(rpcRequest.getClassName(), rpcRequest.getVersion());
+        String serviceKey = YoyoServiceUtil.genServiceKey(rpcRequest.getClassName(), rpcRequest.getVersion());
         Object serviceBean = serviceData.get(serviceKey);
 
         // valid

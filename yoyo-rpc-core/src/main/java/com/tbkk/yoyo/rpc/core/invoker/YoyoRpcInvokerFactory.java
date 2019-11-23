@@ -12,7 +12,6 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.TreeSet;
 
 
@@ -72,7 +71,7 @@ public class YoyoRpcInvokerFactory {
     public String getFinalAddress(String className, String version) {
 
         String finalAddress = "";
-        String serviceKey = YoyoServiceUtil.makeServiceKey(className, version);
+        String serviceKey = YoyoServiceUtil.genServiceKey(className, version);
         TreeSet<String> addressSet = this.getRegisterCenter().discovery(serviceKey);
         // load balance
         if (addressSet == null || addressSet.size() == 0) {
