@@ -118,7 +118,7 @@ public class RpcReferenceInvocationHandler implements InvocationHandler {
         }else if (CallType.CALLBACK == callType) {
             //todo add callBack
             return null;
-        } else if (CallType.JUST_SEND == callType) {
+        } else if (CallType.ONE_WAY == callType) {
             client.asyncSend(finalAddress, rpcRequest);
             return null;
         } else {

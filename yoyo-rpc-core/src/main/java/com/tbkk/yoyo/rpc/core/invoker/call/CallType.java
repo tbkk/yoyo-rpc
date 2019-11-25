@@ -14,7 +14,7 @@ public enum CallType {
 
     CALLBACK,
 
-    JUST_SEND;
+    ONE_WAY;
 
 
     public static CallType match(String name, CallType defaultCallType){
