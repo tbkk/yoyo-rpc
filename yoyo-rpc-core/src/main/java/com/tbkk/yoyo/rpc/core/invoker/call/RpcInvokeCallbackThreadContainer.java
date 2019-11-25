@@ -7,15 +7,15 @@ package com.tbkk.yoyo.rpc.core.invoker.call;
 public class RpcInvokeCallbackThreadContainer {
 
 
-    private ThreadLocal<RpcInvokeCallbackThreadContainer> threadInvokerFuture = new ThreadLocal<RpcInvokeCallbackThreadContainer>();
+    private ThreadLocal<YoyoRpcInvokeCallback> threadInvokerFuture = new ThreadLocal<>();
 
     /**
      * get callback
      *
      * @return
      */
-    public RpcInvokeCallbackThreadContainer getCallback() {
-        RpcInvokeCallbackThreadContainer invokeCallback = threadInvokerFuture.get();
+    public YoyoRpcInvokeCallback getCallback() {
+        YoyoRpcInvokeCallback invokeCallback = threadInvokerFuture.get();
         threadInvokerFuture.remove();
         return invokeCallback;
     }
@@ -25,7 +25,7 @@ public class RpcInvokeCallbackThreadContainer {
      *
      * @param invokeCallback
      */
-    public void setCallback(RpcInvokeCallbackThreadContainer invokeCallback) {
+    public void setCallback(YoyoRpcInvokeCallback invokeCallback) {
         threadInvokerFuture.set(invokeCallback);
     }
 
