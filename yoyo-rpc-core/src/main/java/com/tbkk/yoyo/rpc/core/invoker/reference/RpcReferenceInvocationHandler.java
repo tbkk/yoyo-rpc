@@ -112,7 +112,7 @@ public class RpcReferenceInvocationHandler implements InvocationHandler {
         if (CallType.SYNC == callType) {
             return syncCall(finalAddress, rpcRequest);
 
-        }else if (CallType.FUTIRE == callType) {
+        }else if (CallType.FUTURE == callType) {
             //todo add future
             throw new YoyoRpcException("yoyo-rpc callType[" + callType + "] do not support now");
         }else if (CallType.CALLBACK == callType) {

@@ -10,7 +10,7 @@ public enum CallType {
 
     SYNC,
 
-    FUTIRE,
+    FUTURE,
 
     CALLBACK,
 
