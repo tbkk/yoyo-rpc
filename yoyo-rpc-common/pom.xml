@@ -7,11 +7,44 @@
     <parent>
         <groupId>com.tbkk.yoyo</groupId>
         <artifactId>yoyo-parent</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <!--<version>1.0.1-SNAPSHOT</version>-->
+        <version>${revision}</version>
     </parent>
 
     <groupId>com.tbkk.yoyo</groupId>
     <artifactId>yoyo-rpc-common</artifactId>
 
+<dependencies>
+    <!-- base utils -->
 
+    <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons-beanutils.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+    </dependency>
+    <!-- base utils end-->
+
+    <!-- slf4j -->
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j-api.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${slf4j-api.version}</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
 </project>

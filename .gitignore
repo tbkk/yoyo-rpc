@@ -4,6 +4,7 @@
 
 # for idea
 *.iml
+.flattened-pom.xml
 /.idea
 */target
 **/target

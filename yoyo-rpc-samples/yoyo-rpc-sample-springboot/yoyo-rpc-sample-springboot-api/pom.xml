@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>com.tbkk.yoyo</groupId>
 		<artifactId>yoyo-rpc-sample-springboot</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<version>${revision}</version>
 	</parent>
 	<artifactId>yoyo-rpc-sample-springboot-api</artifactId>
 	<packaging>jar</packaging>

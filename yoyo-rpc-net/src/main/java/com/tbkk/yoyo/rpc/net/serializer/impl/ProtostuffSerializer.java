@@ -12,10 +12,7 @@ import org.objenesis.ObjenesisStd;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/**
- * Protostuff util
- * xuxueli 2015-10-29 18:53:43
- */
+
 public class ProtostuffSerializer extends AbstractSerializer {
 
     private static Objenesis objenesis = new ObjenesisStd(true);

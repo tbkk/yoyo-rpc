@@ -5,7 +5,8 @@
     <parent>
         <artifactId>yoyo-parent</artifactId>
         <groupId>com.tbkk.yoyo</groupId>
-        <version>1.0.1-SNAPSHOT</version>
+        <!--<version>1.0.1-SNAPSHOT</version>-->
+        <version>${revision}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

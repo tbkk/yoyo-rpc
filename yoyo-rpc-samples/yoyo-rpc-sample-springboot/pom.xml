@@ -4,7 +4,8 @@
 	<parent>
 		<groupId>com.tbkk.yoyo</groupId>
 		<artifactId>yoyo-rpc-samples</artifactId>
-		<version>1.0.1-SNAPSHOT</version>
+		<!--<version>1.0.1-SNAPSHOT</version>-->
+		<version>${revision}</version>
 	</parent>
 	<artifactId>yoyo-rpc-sample-springboot</artifactId>
 	<packaging>pom</packaging>
