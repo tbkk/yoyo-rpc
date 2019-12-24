@@ -24,8 +24,8 @@
 ```xml
     <dependency>
         <groupId>com.tbkk.yoyo</groupId>
-        <artifactId>yoyo-all</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <artifactId>yoyo-rpc-springsupport</artifactId>
+        <version>1.0.2-SNAPSHOT</version>
     </dependency>
 ```
 
