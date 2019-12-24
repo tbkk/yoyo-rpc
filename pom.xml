@@ -19,7 +19,7 @@
         <module>yoyo-rpc-springsupport</module>
         <module>yoyo-rpc-loadbalance</module>
         <module>yoyo-rpc-agent</module>
-        <module>yoyo-all</module>
+        <!--<module>yoyo-all</module>-->
     </modules>
 
 	<properties>
